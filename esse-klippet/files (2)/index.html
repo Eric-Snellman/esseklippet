@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Esse Klippet – Dam- och herrfrisering i Ytteresse</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Esse Klippet</h1>
+  <p>Dam- och herrfrisering i Ytteresse, Pedersöre. Vi som jobbar här heter Ciina och Kerstin.</p>
+  <a class="btn" href="#boka">Boka tid</a>
+</header>
+<main class="wrap">
+  <section id="tjanster"><h2>Våra tjänster</h2><div class="grid" id="services"></div></section>
+  <section id="boka">
+    <h2>Boka tid</h2>
+    <div class="card">
+      <form id="f">
+        <label for="svc">Tjänst</label><select id="svc"></select>
+        <label for="who">Frisör</label><select id="who"></select>
+        <label for="date">Datum</label><input type="date" id="date" required>
+        <label>Tid</label><div class="slots" id="slots"></div>
+        <label for="name">Namn</label><input id="name" required autocomplete="name">
+        <label for="tel">Telefon</label><input id="tel" type="tel" required autocomplete="tel">
+        <p><button class="btn" id="go" type="submit" disabled>Skicka bokning</button></p>
+      </form>
+      <div class="msg" id="msg" hidden></div>
+    </div>
+  </section>
+  <section id="kontakt">
+    <h2>Hitta hit</h2>
+    <div class="card center">
+      Bärklarsvägen 1, 68810 Pedersöre<br>
+      <a href="tel:+358409382223">040 9382223</a> · <a href="mailto:esseklippet@gmail.com">esseklippet@gmail.com</a>
+    </div>
+  </section>
+</main>
+<footer>© Esse Klippet · Ytteresse, Pedersöre</footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="config.js"></script>
+<script src="api.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
